@@ -117,7 +117,7 @@ section{
 
 .card{
     height: 439px;
-    width: 390px;
+    max-width: 390px;
     justify-content: space-between;
     align-items: center;
     background-color: white;
@@ -126,7 +126,7 @@ section{
     border-color: #252930;
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
+    padding: 15px;
 }
 
 
@@ -153,7 +153,6 @@ section{
     display: flex;
     gap: 30px;
     width: 100%;
-    padding-left: 50px;
 }
 
 .pagination{
@@ -240,10 +239,7 @@ section{
         justify-content: center;
         margin-top: 10px;;
     }
-    .card{
-        padding: 10px;
-        max-width: fit-content;
-    }
+   
     .menu-list p{
         margin: 0px;
     }
