@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap');
+
+body{
+    background: #232830;
+    color: white;
+    font-family: 'Poppins';
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.logo a{
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-tab{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-tab li{
+    margin: 0 15px;
+}
+
+.nav-tab a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+section{
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1420px;
+
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.hero h1{
+    font-family: 'Recursive';
+    font-size: 71px;
+    font-weight: 400;
+    font-style: italic;
+    color: #FF7575;
+}
+
+.hero p{
+    font-weight: 400;
+    font-size: 29px;
+    margin-top: -5px;
+}
+
+.categories-list{
+    margin-top: 50px;
+}
+
+.categories-line{
+    border-color: #4D4D4D;
+}
+
+.menu{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.menu-icons{
+    display: flex;
+    gap: 15px;
+    margin-right: 50px;
+}
+
+.menu-list{
+    display: flex;
+    gap: 50px;
+    font-family: 'Recursive';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 27px;
+    color: #909090;
+}
+
+.cards-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap; 
+    
+}
+
+.card{
+    height: 439px;
+    width: 390px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 22px;
+    border: 1px;
+    border-color: #252930;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+
+.card-text{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card h1{
+    color: #0F1217;
+    font-weight: 600;
+    font-size: 19px;
+    width: 338px;
+}
+
+.card p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #0F1217;
+}
+
+.card-lower-details{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.pagination{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.pagination a{
+    font-family: 'Recursive';
+    font-style: italic;
+    color: #909090;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.pagination a.active{
+    color: #FF7575;
+    border-top: 2px solid;
+    padding: 0px 10px;
+}
+
+.footer-content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.footer-left{
+    display: flex;
+    gap: 30px;
+}
+
+.footer-left a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-logo{
+    font-family: 'Source Sans 3';
+    font-size: 30px;
+}
+
+.btn {
+    font-family: 'Source Sans 3';
+    background-color: #4699E0;
+    color: white;
+    border-radius: 5px;
+    border-style: hidden;
+    font-size: 19px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+@media (min-width: 360px)and (max-width: 600px){
+    nav {
+        flex-direction: column;	
+    }
+    .logo a{
+        font-size: 22px;
+    }
+    .nav-tab a{
+        font-size: 15px;
+    }
+
+    .hero h1{
+        font-size: 22px;
+    }
+    .hero p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .menu-list{
+        font-size: 14px;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;;
+    }
+    .card{
+        padding: 10px;
+        max-width: fit-content;
+    }
+    .menu-list p{
+        margin: 0px;
+    }
+
+    .menu-icons{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .menu-icons img{
+        width:17px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 7px;
+        align-content: center;
+    }
+
+    .footer-left{
+        flex-direction: column;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .pagination a{
+        font-size: 15px
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 992px)  {
+  
+    .nav-tab a{
+        font-size: 15px;
+    }
+
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .hero p{
+        font-size: 15px;
+    }
+
+    .menu-icons img{
+        width:17px;
+    }
+
+    .menu-list{
+        font-size: 12px;
+        gap: 10px
+    }
+   
+    .btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+   
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero p{
+        font-size: 20px;
+    }
+    .menu-list{
+        font-size: 20px;
+        gap: 20px
+    }
+    .menu-icons{
+        margin-right: 20px;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+    .menu-list{
+        font-size: 20px;
+    }
+}
