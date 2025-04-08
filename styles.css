@@ -109,14 +109,14 @@ section{
 .card-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 50px;
     flex-wrap: wrap; 
     
 }
 
 .card{
-    height: 439px;
+    max-height: 439px;
     max-width: 390px;
     justify-content: space-between;
     align-items: center;
